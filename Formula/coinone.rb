@@ -8,10 +8,8 @@ class Coinone < Formula
   depends_on "node"
 
   def install
-    cd "package" do
-      system "npm", "install", *std_npm_args
-      bin.install_symlink libexec/"bin/coinone"
-    end
+    system "npm", "install", *std_npm_args
+    bin.install_symlink libexec/"bin/coinone"
   end
 
   test do
