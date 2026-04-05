@@ -1,8 +1,8 @@
 class Coinone < Formula
   desc "Developer-friendly CLI for Coinone public and private APIs"
   homepage "https://github.com/2sem/coinone-api-cli"
-  url "https://github.com/2sem/coinone-api-cli/archive/refs/tags/v1.0.2.tar.gz"
-  sha256 "238aebbe11bf6b6ff9d0f39250a922b58146ad71b15da68f47862a0955ec1115"
+  url "https://github.com/2sem/coinone-api-cli/archive/refs/tags/1.0.3.tar.gz"
+  sha256 "8b58bfd2a2322da0a3d60437888f6c830638abdae63d17a03eb202ac378cbccf"
   license "MIT"
 
   depends_on "node"
