@@ -1,15 +1,15 @@
 class Coinone < Formula
-  desc "Developer-friendly CLI for Coinone public and private APIs"
-  homepage "https://github.com/2sem/coinone-api-cli"
-  url "https://github.com/2sem/coinone-api-cli/archive/refs/tags/1.0.3.tar.gz"
-  sha256 "8b58bfd2a2322da0a3d60437888f6c830638abdae63d17a03eb202ac378cbccf"
-  license "MIT"
+  desc 'Developer-friendly CLI for Coinone public and private APIs'
+  homepage 'https://github.com/2sem/coinone-api-cli'
+  url 'https://registry.npmjs.org/coinone-api-cli/-/coinone-api-cli-1.0.4.tgz'
+  sha256 '1a946a5333ba9d23a4d3d517fc1e4b36218e5a1af513572714f40000496cad0c'
+  license 'MIT'
 
-  depends_on "node"
+  depends_on 'node'
 
   def install
-    system "npm", "install", *std_npm_args
-    bin.install_symlink libexec/"bin/coinone"
+    system 'npm', 'install', *std_npm_args
+    bin.install_symlink libexec / 'bin/coinone'
   end
 
   test do
